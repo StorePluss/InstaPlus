@@ -11,11 +11,19 @@
             color: #ffffff; /* Letras brancas */
         }
 
+        h1 {
+            color: #32cd32; /* Verde florescente */
+            text-align: center;
+            font-size: 3em;
+            margin-top: 20px;
+            text-shadow: 2px 2px #000000;
+        }
+
         .container {
             display: flex;
-            flex-direction: row;
-            overflow-x: auto;
+            flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
             padding: 20px;
         }
 
@@ -25,25 +33,30 @@
             width: 300px;
             border-radius: 8px;
             text-align: center;
-        }
-
-        .anuncio img {
-            width: 100%;
-            border-radius: 8px;
+            border: 2px solid #32cd32; /* Borda verde florescente */
         }
 
         .comprar {
             display: inline-block;
             margin-top: 10px;
             padding: 10px 20px;
-            background-color: #28a745; /* Cor verde forte */
+            background-color: #32cd32; /* Cor verde forte */
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
         }
 
         .comprar:hover {
-            background-color: #218838;
+            background-color: #28a745;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1c1c1c;
+            border-top: 2px solid #32cd32;
         }
     </style>
 </head>
@@ -56,7 +69,6 @@
     <section class="container">
         <!-- Primeiro anúncio -->
         <div class="anuncio">
-            <img src="Captura de tela_20240814-234440_Instagram.jpg" alt="Anúncio 1">
             <h3>Perfil com 14 mil seguidores - Verificado</h3>
             <p>R$ 600,00</p>
             <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2014k%20seguidores">Comprar</a>
@@ -64,7 +76,6 @@
 
         <!-- Segundo anúncio -->
         <div class="anuncio">
-            <img src="Captura de tela_20240926-204807_Instagram.jpg" alt="Anúncio 2">
             <h3>Perfil com 10 mil seguidores</h3>
             <p>R$ 350,00</p>
             <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2010k%20seguidores">Comprar</a>
@@ -72,7 +83,6 @@
 
         <!-- Terceiro anúncio -->
         <div class="anuncio">
-            <img src="Captura de tela_20240926-205112_Instagram.jpg" alt="Anúncio 3">
             <h3>Perfil com 30 mil seguidores</h3>
             <p>R$ 350,00</p>
             <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2030k%20seguidores">Comprar</a>
@@ -80,7 +90,6 @@
 
         <!-- Quarto anúncio -->
         <div class="anuncio">
-            <img src="Captura de tela_20240926-205332_WhatsAppBusiness.jpg" alt="Anúncio 4">
             <h3>Perfil com 10 mil seguidores</h3>
             <p>R$ 350,00</p>
             <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2010k%20seguidores">Comprar</a>
@@ -88,7 +97,20 @@
 
         <!-- Quinto anúncio -->
         <div class="anuncio">
-            <img src="Captura de tela_20240926-205354_WhatsAppBusiness.jpg" alt="Anúncio 5">
+            <h3>Perfil com 10 mil seguidores</h3>
+            <p>R$ 350,00</p>
+            <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2010k%20seguidores">Comprar</a>
+        </div>
+
+        <!-- Sexto anúncio -->
+        <div class="anuncio">
+            <h3>Perfil com 10 mil seguidores</h3>
+            <p>R$ 350,00</p>
+            <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2010k%20seguidores">Comprar</a>
+        </div>
+
+        <!-- Sétimo anúncio -->
+        <div class="anuncio">
             <h3>Perfil com 10 mil seguidores</h3>
             <p>R$ 350,00</p>
             <a class="comprar" href="https://wa.me/5511995879330?text=Quero%20comprar%20perfil%20com%2010k%20seguidores">Comprar</a>
@@ -100,4 +122,4 @@
     </footer>
 
 </body>
-</html>
+    </html>
