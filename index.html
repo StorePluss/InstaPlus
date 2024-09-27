@@ -1,169 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Plus - Perfis Verificados</title>
+    <title>Instaplus - Vendas de Perfis</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
+            background-color: #000000;
+            color: #FFFFFF;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
-        header {
-            background-color: #1c1c1c;
-            padding: 20px;
+        .header {
             text-align: center;
-        }
-        header h1 {
-            color: #f0db4f;
+            padding: 20px;
             font-size: 36px;
+            color: #00FF00; /* Verde florescente */
         }
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        section {
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
             padding: 20px;
-            text-align: center;
+            gap: 30px;
         }
-        .profile-card {
-            background-color: #333;
-            padding: 20px;
-            margin: 20px;
-            display: inline-block;
-            width: 250px;
+        .card {
+            background-color: #1a1a1a;
+            border: 2px solid #00FF00;
             border-radius: 10px;
-            text-align: left;
-        }
-        .profile-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .profile-card h2 {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-        .profile-card p {
-            margin: 5px 0;
-        }
-        .profile-card a {
-            display: inline-block;
-            background-color: #f0db4f;
-            color: #000;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-        .profile-card a:hover {
-            background-color: #c7a934;
-        }
-        .search-bar {
-            margin: 20px;
-        }
-        .search-bar input {
-            padding: 10px;
             width: 300px;
-            border-radius: 5px;
-            border: none;
-        }
-        .search-bar button {
-            padding: 10px;
-            background-color: #f0db4f;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .cart-button {
-            background-color: #f0db4f;
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .cart-button:hover {
-            background-color: #c7a934;
-        }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border: none;
-            padding: 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-        }
-        footer {
-            background-color: #1c1c1c;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
-            position: absolute;
+            margin-bottom: 20px;
+        }
+        .card img {
             width: 100%;
-            bottom: 0;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 15px 0;
+        }
+        .buy-button {
+            background-color: #00FF00;
+            color: #000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .buy-button:hover {
+            background-color: #00cc00;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Store Plus - Perfis Verificados do Instagram</h1>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Perfis</a>
-    <a href="#">Carrinho</a>
-    <a href="#">Contato</a>
-</nav>
-
-<section>
-    <div class="search-bar">
-        <input type="text" placeholder="Buscar perfil por nome...">
-        <button>Buscar</button>
+    <div class="header">
+        Instaplus
     </div>
 
-    <div class="profile-card">
-        <img src="perfil1.jpg" alt="Perfil 1">
-        <h2>@perfilverificado1</h2>
-        <p>10.2k seguidores</p>
-        <p>R$ 2.500,00</p>
-        <a href="#">Adicionar ao Carrinho</a>
+    <div class="container">
+        <!-- Primeiro Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240921-013127_WhatsAppBusiness.jpg" alt="Anúncio 1">
+            <h3>Perfil com 14 mil seguidores verificado - R$600</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+14+mil+seguidores+verificado">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Segundo Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240926-205112_Instagram.jpg" alt="Anúncio 2">
+            <h3>Perfil com 10 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+10+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Terceiro Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240926-204807_Instagram.jpg" alt="Anúncio 3">
+            <h3>Perfil com 30 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+30+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Quarto Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240814-234440_Instagram.jpg" alt="Anúncio 4">
+            <h3>Perfil com 10 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+10+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Quinto Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240926-205354_WhatsAppBusiness.jpg" alt="Anúncio 5">
+            <h3>Perfil com 10 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+10+mil+seguidores">Comprar</a>
+            </button>
+        </div>
     </div>
 
-    <div class="profile-card">
-        <img src="perfil2.jpg" alt="Perfil 2">
-        <h2>@perfilverificado2</h2>
-        <p>12.5k seguidores</p>
-        <p>R$ 3.000,00</p>
-        <a href="#">Adicionar ao Carrinho</a>
+    <div class="footer">
+        Direitos autorais © 2024 - Insta Plus - Site confiável | Kelviny Leite Martins
     </div>
-
-    <!-- Mais perfis podem ser adicionados -->
-
-</section>
-
-<a href="https://wa.me/SEUNUMERO" class="whatsapp-button" target="_blank">
-    WhatsApp
-</a>
-
-<footer>
-    <p>&copy; 2024 Store Plus - Todos os direitos reservados.</p>
-</footer>
 
 </body>
-</html>   
+</html>
