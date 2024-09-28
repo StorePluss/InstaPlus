@@ -1,108 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InstaPlus - Vendas de Perfis</title>
-  <style>
-    body {
-      background-color: #000000;
-      color: #FFFFFF;
-      font-family: Arial, sans-serif;
-    }
-
-    .header {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .header img {
-      width: 200px;
-      height: auto;
-    }
-
-    .logo {
-      font-size: 3em;
-      color: #00ff00; /* Cor verde neon para o título InstaPlus */
-      font-weight: bold;
-    }
-
-    .anuncios-lateral {
-      display: flex;
-      overflow-x: auto;
-      white-space: nowrap;
-      padding: 20px;
-    }
-
-    .anuncio-item {
-      flex: 0 0 auto;
-      background-color: #1a1a1a;
-      padding: 15px;
-      margin: 10px;
-      border-radius: 8px;
-      min-width: 250px;
-      text-align: center;
-    }
-
-    .anuncio-item p {
-      margin: 10px 0;
-      font-size: 1.2em;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1a1a1a;
-    }
-
-    .footer p {
-      margin: 5px 0;
-    }
-
-    .whatsapp-button {
-      color: #00ff00;
-      text-decoration: none;
-      font-size: 1.5em;
-      display: inline-block;
-      margin-top: 20px;
-    }
-
-    .whatsapp-button:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instaplus - Vendas de Perfis</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            color: #00FF00; /* Verde florescente */
+        }
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 20px;
+            gap: 30px;
+        }
+        .card {
+            background-color: #1a1a1a;
+            border: 2px solid #00FF00;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 15px 0;
+        }
+        .buy-button {
+            background-color: #00FF00;
+            color: #000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .buy-button:hover {
+            background-color: #00cc00;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Cabeçalho com logo -->
-  <div class="header">
-    <div class="logo">InstaPlus</div>
-  </div>
+    <div class="header">
+        Instaplus
+    </div>
 
-  <!-- Fileira de anúncios rolando lateralmente -->
-  <div class="anuncios-lateral">
-    <div class="anuncio-item">
-      <p>Perfil com 14 mil seguidores verificado - R$ 600</p>
-    </div>
-    <div class="anuncio-item">
-      <p>Perfil com 10 mil seguidores - R$ 350</p>
-    </div>
-    <div class="anuncio-item">
-      <p>Perfil com 30 mil seguidores - R$ 350</p>
-    </div>
-    <div class="anuncio-item">
-      <p>Perfil com 10 mil seguidores - R$ 350</p>
-    </div>
-    <div class="anuncio-item">
-      <p>Perfil com 10 mil seguidores - R$ 350</p>
-    </div>
-  </div>
+    <div class="container">
+        <!-- Primeiro Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240921-013127_WhatsAppBusiness.jpg" alt="Anúncio 1">
+            <h3>Perfil com 14 mil seguidores verificado - R$600</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+14+mil+seguidores+verificado">Comprar</a>
+            </button>
+        </div>
 
-  <!-- Rodapé -->
-  <div class="footer">
-    <p>Direitos Autorais © 2024 Kelviny Leite Martins - InstaPlus Site Confiável</p>
-    <a href="https://wa.me/5511995879330" class="whatsapp-button">WhatsApp</a>
-  </div>
+        <!-- Segundo Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240926-205112_Instagram.jpg" alt="Anúncio 2">
+            <h3>Perfil com 10 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+10+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Terceiro Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240926-204807_Instagram.jpg" alt="Anúncio 3">
+            <h3>Perfil com 30 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+30+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Quarto Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240814-234440_Instagram.jpg" alt="Anúncio 4">
+            <h3>Perfil com 10 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+10+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+
+        <!-- Quinto Anúncio -->
+        <div class="card">
+            <img src="Captura de tela_20240926-205354_WhatsAppBusiness.jpg" alt="Anúncio 5">
+            <h3>Perfil com 10 mil seguidores - R$350</h3>
+            <button class="buy-button">
+                <a href="https://wa.me/5511995879330?text=Estou+interessado+no+perfil+com+10+mil+seguidores">Comprar</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Direitos autorais © 2024 - Insta Plus - Site confiável | Kelviny Leite Martins
+    </div>
 
 </body>
 </html>
